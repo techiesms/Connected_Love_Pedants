@@ -336,7 +336,9 @@ repeat:
 
  // delay(500);
 
-
+if(! mqtt.ping()) {
+    mqtt.disconnect();
+  }
 
   // put your main code here, to run repeatedly:
 
