@@ -322,7 +322,9 @@ repeat:
   }
 
 
-
+  if(! mqtt.ping()) {
+    mqtt.disconnect();
+  }
 
   //delay(500);
 
